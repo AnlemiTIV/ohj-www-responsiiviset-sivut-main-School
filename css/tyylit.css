@@ -1,0 +1,401 @@
+
+/*Koskee kaikkia kun asteriski*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /*padding 0 poisti listapilkut*/
+}
+
+/*Perus juttu mikä kannattaa olla kaikissa css tiedostoissa*/
+.container {
+    width: 55%;
+    max-width: 1150px;
+    min-height: 100%;
+    margin: auto;
+    overflow: hidden; /*jos sisältö menee elementin yli,
+    piilottaa*/
+}
+
+header {
+    background-color: rgb(73, 94, 130);
+    color: rgb(204, 204, 204);
+    min-height: 50px;
+    padding: 20px 0px 10px 0px;
+    margin: 0px 0px 15px 0px;
+    border-bottom: rgb(53, 68, 95) 4px solid;
+    
+}
+
+/*ul {
+    margin: 0;
+    padding: 0;
+
+}*/
+
+
+body {
+    background-color: rgb(164, 179, 183);
+    font-family: "Lato, sans-serif";
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/*Headerin navilinkit osio*/
+.navilinkit ul li{
+    padding: 5px 5px 10px 5px;
+    display: inline; 
+}
+
+.navilinkit ul {
+    text-align: center;
+    margin: auto;
+    margin: 5px;
+}
+
+.navilinkit a {
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+}
+
+.navilinkit a:hover{
+    color: rgb(115, 186, 226);
+}
+
+/*Yli-otsikko osio, index*/
+
+#ylin-otsikko h2 {
+    text-align: center;
+    margin: 0px;
+}
+
+/*Indexin sisältö*/
+.index-otsikko p {
+    margin: 5px 0px 10px 0px;
+}
+
+.index-otsikko h1 {
+    position: center;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+
+.index-sisalto h2 {
+    margin: 5px 0px 15px 0px;
+}
+
+.index-sisalto h3 {
+    margin: 3px 0px 2px 0px;
+    padding: 2px 0px 2px 0px; 
+}
+
+.index-sisalto p {
+    margin: 5px 0px 20px 0px;
+}
+
+/*table asetukset*/
+.kriter-table {
+    border: 2px solid;
+    max-width: 800px;
+    margin: 0px 0px 10px 0px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.kriter-table p {
+    padding: 1.5px;
+    margin: 0px 0px 5px 0px;
+}
+
+.arvosan {
+    padding: 5px;
+    max-width: 20%;
+}
+
+.opiskelija {
+    float: left;    
+    padding: 5px;
+    padding-right: 710px;    /*800 jos et hoksaa korjata oikein*/ 
+}
+
+th, td, tr {
+    border: 2px solid;
+    padding: 10px 5px 10px 5px;
+    max-width: 200px;
+}
+
+th {
+    white-space: nowrap;
+}
+
+td {
+    max-width: 50%;
+    word-wrap: break-word;
+    width: 120px;
+}
+
+
+/*Osaamisen arviointi osio, eli 3. sivu*/
+.sivu3 h2 {
+    position: center;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
+
+.sivu3 p {
+    margin: 23px 0px 0px 0px;
+}
+
+/*Tutkinnon muodostuminen, eli 4. sivu*/
+
+.sivu4 h2 {
+    position: center;
+    margin: 0px 0px 3px 0px;
+    padding: 0px;
+}
+
+.sivu4 p {
+    margin: 11px 0px 11px 0px;
+}
+
+#p-tyyli6 {
+    margin: 0px 0px 0px 0px; 
+    padding: 10px 0px 10px 0px;
+}
+
+/*tutkinnonosat eli viimeinen, 5. sivu*/
+
+.sivu5-yla h2 {
+
+    margin: 0px 0px 20px 0px;
+    /*ei mene toisiin h2 osiin...*/
+}
+
+.sivu5-yla h3 {
+    
+    margin: 15px 0px 15px 0px;
+    padding: 5px 0px 0px 0px;
+}
+
+.sivu5-yla h4 {
+    font-size: 25px;
+    font-weight: 100;
+    margin: 8px 0px 8px 0px ;
+}
+
+.sivu5-yla p{
+
+    padding: 0px 0px 0px 10px;
+
+}
+
+/*Mahdollista, että erilliset h4 tyylit html tiedostossa
+joutuu poistamaan ja lisäämään css:ään jos mobiiliversion
+kanssa tulee ongelmia sen osion kanssa*/
+
+/*Footer osio*/
+footer {
+
+    background-color: rgb(141, 166, 190);
+    font-style:italic;
+    text-align: center;
+    padding: 40px; /*50px 50px original*/
+    margin: 0px;
+    font-size: 18px;    
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+    }
+
+    .container {
+
+        width: 100%;
+    }
+
+    .navilinkit ul li{
+        padding: 4px 55px 5px 5px;
+        display: block; 
+        width: 100%;
+    }
+
+    .navilinkit ul {
+        text-align: center;
+        margin: auto;
+        margin: 2px;
+        width: 100%;
+    }
+    
+    
+    .index-otsikko p {
+    margin: 5px 10px 10px 0px;
+    padding: 10px 0px 10px 7px;
+    
+    }
+
+    .index-otsikko h1 {
+    text-align: center;
+    margin: 0px 5px 10px 5px;
+    padding: 0px;
+    }
+
+    .index-sisalto h2 {
+    margin: 5px 0px 15px 0px;
+    padding: 10px;
+    }
+
+    .index-sisalto h3 {
+    margin: 3px 0px 2px 0px;
+    padding: 10px; 
+    }
+
+    .index-sisalto p {
+    margin: 5px 10px 10px 0px;
+    padding: 10px 0px 10px 7px;
+    }
+
+
+    /*Kriteerit sisältö*/
+
+    .kriter-table {
+    border: none;
+    width: 100%;
+    max-width: 180px;
+    margin: 0px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    padding: 0px;
+    }
+    
+    .kriter-table p {
+    width: 100%;
+    padding: 1.5px;
+    margin: 0px 0px 5px 0px;
+    }
+    
+    .arvosan {
+    padding: 7px;
+    width: 100%;
+    padding: 5px;
+    max-width: 20%;
+    }
+    
+    .opiskelija {
+    padding: 5px;
+    width: 100%;
+    float: left;    
+    padding: 5px 15px;
+    padding-right: 193px;    /*800 jos et hoksaa korjata oikein*/ 
+    }
+    
+    th, td, tr {
+    padding: 5px;
+    width: 100%;
+    border: 2px solid;
+    padding: 10px 5px 10px 5px;
+    max-width: 100px;
+    }
+    
+    th {
+    padding: 5px;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 14px;
+    }
+    
+    td {
+    padding: 3px;
+    max-width: 40%;
+    width: 100%;
+    word-wrap: break-word;
+    width: 100px;
+    }
+
+    /*Osaamisen arviointi, eli 3. sivu*/
+
+    .sivu3 h2 {
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+        padding: 5px;
+    }
+    
+    .sivu3 p {
+        margin: 10px 3px 0px 2px;
+        padding: 10px 2px 2px 7px;
+    }
+
+    #siv4-vali {
+        margin: 30px 0px 0px 0px;
+    }
+
+
+    /*Tutkinnon muodostuminen, 4. sivu*/
+
+    .sivu4 h2 {
+        text-align: center;
+        margin: 0px 0px opx 0px;
+        padding: 5px;
+    }
+    
+    .sivu4 p {
+        margin: 10px 3px 0px 2px;
+        padding: 10px 2px 2px 7px;
+    }
+
+    #p-tyyli6 {
+        margin: 0px 0px 0px 0px; 
+        padding: 10px 0px 10px 10px;
+    }
+
+
+    /*Tutkinnonosat, 5.sivu*/
+
+    .sivu5-yla h2 {
+
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+        padding: 0px 10px 0px 5px;
+        /*ei mene toisiin h2 osiin...*/
+    }
+
+    #koodi-siv5 {
+        text-align: center;
+    }
+    
+    .sivu5-yla h3 {
+        text-align: center;
+        
+        margin: 15px 0px 15px 0px;
+        padding: 5px 0px 0px 10px;
+    }
+
+    .sivu5-yla h4 {
+        font-size: 25px;
+        font-weight: 100;
+        margin: 8px 0px 8px 0px;
+        padding: 0px 0px 0px 10px;
+    }
+    
+    .sivu5-yla p{
+    
+        padding: 5px 10px 0px 10px;
+    
+    }
+
+}
